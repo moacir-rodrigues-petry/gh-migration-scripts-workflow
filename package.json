@@ -9,6 +9,7 @@
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
 		"test": "mocha",
+		"coverage": "nyc mocha",
 		"analyze": "node index"
 	},
 	"bin": {
@@ -51,7 +52,19 @@
 		"eslint-plugin-promise": "^6.1.1",
 		"jest": "^29.7.0",
 		"mocha": "^10.2.0",
+		"nyc": "^17.0.0",
 		"prettier": "^3.1.0",
 		"sinon": "^17.0.1"
+	},
+	"nyc": {
+		"all": true,
+		"reporter": [
+			"text",
+			"html"
+		],
+		"include": [
+			"src/index.js"
+		],
+		"exclude": []
 	}
 }

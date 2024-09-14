@@ -63,7 +63,8 @@
 			"html"
 		],
 		"include": [
-			"src/index.js"
+			"src/index.js",
+			"src/services/constants.js"
 		],
 		"exclude": []
 	}
